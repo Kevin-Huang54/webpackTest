@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npx webpack build",
     "test": "test"
   },
   "repository": {
