@@ -1,0 +1,13 @@
+.father {
+  width: 300px;
+  padding: 20px;
+  border: 5px solid #000;
+  box-sizing: border-box;
+}
+
+.fatherColor {
+  background-color: wheat;
+}
+.fatherColor2 {
+  background-color: greenyellow;
+}
