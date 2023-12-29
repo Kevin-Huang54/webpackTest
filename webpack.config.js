@@ -37,6 +37,10 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif|webp)$/,
+        type: 'asset',
+      },
     ],
   },
   plugins: [

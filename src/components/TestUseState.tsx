@@ -1,15 +1,22 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useImmer } from 'use-immer';
 
+function getInitList() {
+  console.log('getInitList');
+  return [{ age: 1 }, { age: 1 }, { age: 1 }, { age: 1 }];
+}
 export default function TestUseState({ nameKey }: { nameKey: string }) {
-  const [formData, updateFormData] = useImmer([{ age: 1 }, { age: 1 }, { age: 1 }, { age: 1 }]);
+  const [formData, updateFormData] = useImmer(getInitList);
+  useEffect(() => {
+    console.log('render');
+  }, []);
   return (
     <>
       <div>{JSON.stringify(formData)}</div>
       <button
         onClick={() => {
           updateFormData(list => {
-            list[0].age = 2;
+            list.push({ age: 3 });
           });
         }}
       >

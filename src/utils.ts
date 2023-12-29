@@ -5,4 +5,5 @@ export function expensiveFn() {
     i++;
   }
   console.log('expensiveFn end');
+  return 'expensiveFn finished'
 }
