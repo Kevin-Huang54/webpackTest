@@ -6,9 +6,9 @@ export default function TestRequest() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
-      .get<string[]>('http://localhost:5000/getList')
+      .get<string[]>('http://localhost:5000/getList', { params: { id: 100 } })
       .then(response => {
-        setData(response.data);
+        // setData(response.data);
       })
       .catch(error => {
         // debugger;
