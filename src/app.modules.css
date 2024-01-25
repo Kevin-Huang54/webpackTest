@@ -11,3 +11,15 @@
 .fatherColor2 {
   background-color: greenyellow;
 }
+
+.progressBox {
+  margin: 10px 0;
+  width: 60vw;
+  display: flex;
+}
+.progressBlock {
+  width: 10%;
+  height: 20px;
+  border: 1px solid gainsboro;
+  margin-left: -1px;
+}
