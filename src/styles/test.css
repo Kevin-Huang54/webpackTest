@@ -6,6 +6,7 @@
   overflow: hidden;
 }
 .box {
+  display: block;
   font-size: 18px;
   background-image: url("../images/smallImage.svg");
 }
