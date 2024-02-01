@@ -1,0 +1,15 @@
+.icon {
+  width: 3em;
+  height: 3em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.box {
+  font-size: 18px;
+  background-image: url("../images/smallImage.svg");
+}
+.box2 {
+  font-size: 18px;
+  background-image: url("../images/profile.jpg");
+}

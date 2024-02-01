@@ -2,56 +2,23 @@
   "name": "webpacktest",
   "version": "1.0.0",
   "description": "",
+  "main": "src/main.js",
   "scripts": {
-    "start": "webpack-dev-server -c webpack.dev.js",
-    "build": "webpack -c webpack.prod.js",
-    "test": "test"
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kevin-Huang54/webpackTest.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Kevin-Huang54/webpackTest/issues"
-  },
-  "homepage": "https://github.com/Kevin-Huang54/webpackTest#readme",
-  "dependencies": {
-    "axios": "^1.6.3",
-    "file-loader": "^6.2.0",
-    "immer": "^10.0.3",
-    "moment": "^2.29.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "spark-md5": "^3.0.2",
-    "use-immer": "^0.9.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.23.6",
-    "@babel/preset-react": "^7.23.3",
-    "@babel/preset-typescript": "^7.23.3",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "@types/spark-md5": "^3.0.4",
-    "@typescript-eslint/eslint-plugin": "^6.14.0",
-    "@typescript-eslint/parser": "^6.14.0",
-    "babel-eslint": "^10.1.0",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
     "babel-loader": "^9.1.3",
-    "css-loader": "^6.8.1",
-    "eslint": "^8.55.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.0",
-    "eslint-plugin-prettier": "^5.0.1",
-    "eslint-plugin-react": "^7.33.2",
-    "html-webpack-plugin": "^5.5.3",
-    "prettier": "^3.1.1",
-    "style-loader": "^3.3.3",
-    "typescript": "^4.9.4",
-    "url-loader": "^4.1.1",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1",
-    "webpack-merge": "^5.10.0"
+    "css-loader": "^6.10.0",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^3.3.4",
+    "webpack": "5.72",
+    "webpack-cli": "4.9.2"
   }
 }
