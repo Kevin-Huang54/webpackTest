@@ -7,7 +7,9 @@ module.exports = merge(baseConfig, {
   devtool: "source-map",
   output: {
     path: resolve(__dirname, "../dist"), // 生产模式需要输出
-    filename: "js/[name].js",
+    filename: "static/js/[name]-[contenthash].js",
+    chunkFilename: "static/js/[name]-[contenthash].chunk.js", // 动态导入输出资源命名方式
+    assetModuleFilename: "static/media/[name].[contenthash][ext]", // 图片、字体等资源命名方式（注意用contenthash）
     clean: true,
   },
 });

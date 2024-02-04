@@ -78,16 +78,21 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "./public/index.html"),
     }),
-    new ESLintPlugin({
-      context: path.resolve(__dirname, "./src"),
-      cache: true, // 开启缓存
-      // 缓存目录
-      cacheLocation: path.resolve(
-        __dirname,
-        "../node_modules/.cache/.eslintcache",
-      ),
-      threads, // 开启多进程
+    // new ESLintPlugin({
+    //   context: path.resolve(__dirname, "./src"),
+    //   cache: true, // 开启缓存
+    //   // 缓存目录
+    //   cacheLocation: path.resolve(
+    //     __dirname,
+    //     "../node_modules/.cache/.eslintcache",
+    //   ),
+    //   threads, // 开启多进程
+    // }),
+    // 提取css成单独文件
+    new MiniCssExtractPlugin({
+      // 定义输出文件名和目录
+      filename: "static/css/[name]-[contenthash].css",
+      chunkFilename: "static/css/[name]-[contenthash].chunk.css",
     }),
-    new MiniCssExtractPlugin({ filename: "static/css/main.css" }),
   ],
 };

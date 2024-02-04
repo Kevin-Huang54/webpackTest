@@ -1,5 +1,7 @@
-export default function sum(...args) {
+function sum(...args) {
   return args.reduce((previousValue, currentValue) => {
     return previousValue + currentValue;
   }, 0);
 }
+
+export default sum;
