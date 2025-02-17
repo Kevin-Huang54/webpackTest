@@ -1,0 +1,25 @@
+.father {
+  width: 300px;
+  padding: 20px;
+  border: 5px solid #000;
+  box-sizing: border-box;
+}
+
+.fatherColor {
+  background-color: wheat;
+}
+.fatherColor2 {
+  background-color: greenyellow;
+}
+
+.progressBox {
+  margin: 10px 0;
+  width: 60vw;
+  display: flex;
+}
+.progressBlock {
+  width: 10%;
+  height: 20px;
+  border: 1px solid gainsboro;
+  margin-left: -1px;
+}
